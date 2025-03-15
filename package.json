@@ -1,0 +1,44 @@
+{
+  "name": "afiliatech",
+  "version": "1.0.0",
+  "description": "Micro SaaS para curadoria e promoção de produtos de tecnologia afiliados da Hotmart.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EtecGmail/afiliatech.git"
+  },
+  "keywords": [
+    "Next.js",
+    "Hotmart",
+    "afiliados",
+    "tecnologia",
+    "SaaS"
+  ],
+  "author": "Yuzlkk",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.5.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swr": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.39.0",
+    "eslint-config-next": "13.5.7",
+    "jest": "^29.7.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
+  },
+  "bugs": {
+    "url": "https://github.com/EtecGmail/afiliatech/issues"
+  },
+  "homepage": "https://github.com/EtecGmail/afiliatech#readme"
+}
