@@ -1,37 +1,128 @@
+
+
+```markdown
 # AfiliaTech
 
-AfiliaTech é um micro SaaS focado na curadoria e promoção de produtos de tecnologia afiliados da Hotmart. A plataforma oferece um catálogo interativo com filtros avançados e um sistema de recomendação personalizada, permitindo aos usuários encontrar facilmente produtos que atendam aos seus interesses. O objetivo é aumentar a conversão, redirecionando o usuário para a página de compra da Hotmart com o link de afiliado.
+AfiliaTech é um micro SaaS open-source, criada exclusivamente para curadoria e recomendação personalizada de produtos digitais de tecnologia, afiliados à Hotmart (E talvez outras plataformas do mesmo serviço).
 
-## Recursos
+> **Este projeto é voltado exclusivamente para fins estudantis particulares, desenvolvido por mim para praticar e aprimorar conhecimentos em análise, arquitetura e desenvolvimento de software.**
 
-- **Integração com Hotmart API:** Sincroniza produtos e utiliza webhooks para atualizar o catálogo em tempo real.
-- **Catálogo Interativo:** Exibe produtos com filtros por categoria, faixa de preço, e outros parâmetros.
-- **Recomendação Personalizada:** Sugere produtos com base nos interesses e comportamento do usuário.
-- **Otimização de Conversão (CRO):** Implementa testes A/B, heatmaps e técnicas de copywriting para maximizar a conversão.
-- **Tecnologias Modernas:** Construído com Next.js, React e Tailwind CSS para uma experiência rápida e responsiva.
-- **Infraestrutura Escalável:** Utiliza Supabase (PostgreSQL) para o banco de dados e integrações serverless via Vercel/Netlify.
+## 🎯 Objetivo do Projeto
 
-## Tecnologias Utilizadas
+O objetivo do projeto é permitir ao usuário encontrar rapidamente cursos, e-books, softwares e outros produtos digitais tecnológicos afiliados à Hotmart, oferecendo recomendações personalizadas baseadas nos interesses individuais dos usuários, garantindo uma experiência altamente eficaz e otimizada para conversão.
 
-- **Front-end:** Next.js, React, Tailwind CSS
-- **Back-end/API:** Next.js API Routes (Node.js) em ambiente serverless
-- **Banco de Dados:** Supabase (PostgreSQL)
-- **Integração e Automação:** Hotmart API, Webhooks, Zapier/Make
-- **Analytics:** Google Analytics 4, Hotjar, Amplitude/Mixpanel
+## 📚 Motivações e Objetivos
 
-## Começando
+- Praticar habilidades técnicas em **análise e desenvolvimento de software**.
+- Aprofundar conhecimentos em **Next.js, React, Tailwind CSS, Node.js e Serverless**.
+- Explorar integração eficiente com APIs externas (Hotmart e Supabase).
+- Melhorar o entendimento sobre estratégias avançadas de **Conversion Rate Optimization (CRO)**.
 
-### Pré-requisitos
+## 🚀 Principais Funcionalidades
 
-- Node.js (versão 16.x ou superior)
-- npm ou yarn
-- Conta na Vercel/Netlify para deploy
-- Variáveis de ambiente configuradas conforme necessário
+- 🔹 **Catálogo interativo e responsivo** com filtros inteligentes.
+- 🔹 **Integração direta com Hotmart** (API/Webhooks).
+- 🔹 **Sistema avançado de recomendação personalizada** baseado nos interesses do usuário.
+- 🔹 **Testes A/B, heatmaps e técnicas de copywriting** para otimizar conversões.
+- 🔹 Monitoramento completo com **Google Analytics 4, Hotjar e Mixpanel**.
 
-### Instalação
+## ⚙️ Stack Tecnológica
 
-1. **Clone o repositório:**
+- **Front-end**: Next.js, React e Tailwind CSS
+- **Back-end/API**: Node.js, Serverless (AWS Lambda, Vercel Functions)
+- **Banco de Dados:** PostgreSQL via Supabase
+- **Deploy:** Vercel, CI/CD via GitHub Actions
+- **Análise e Monitoramento:** Google Analytics 4, Hotjar, Mixpanel/Amplitude
 
+## 🗂️ Estrutura do Projeto
+
+```bash
+afiliatech/
+├── public/                # Arquivos estáticos (imagens, assets)
+├── src/
+│   ├── components/        # Componentes React reutilizáveis
+│   ├── pages/             # Páginas do Next.js
+│   └── styles/            # Estilos e configuração do Tailwind CSS
+├── .github/workflows      # Workflows do GitHub Actions
+├── next.config.js         # Configuração do Next.js
+├── package.json
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+## ⚙️ Como executar localmente
+
+Clone o projeto:
+
+```bash
+git clone https://github.com/EtecGmail/afiliatech.git
+cd afiliatech
+```
+
+Instale dependências:
+
+```bash
+npm install
+```
+
+Configure suas variáveis de ambiente criando o arquivo `.env.local`:
+
+```env
+HOTMART_API_KEY=sua-chave-api-hotmart
+SUPABASE_URL=sua-url-supabase
+SUPABASE_ANON_KEY=sua-chave-supabase
+```
+
+Rode o projeto localmente:
+
+```bash
+npm run dev
+```
+
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
+
+## 🚀 CI/CD
+
+Este projeto usa **GitHub Actions** para garantir integração contínua (CI) e deployment contínuo (CD). O workflow automatiza linting, testes, build e deploy (opcional via Vercel):
+
+- Workflow disponível em: [ci-cd.yml](.github/workflows/ci-cd.yml)
+
+## 📌 Infraestrutura, Performance e Segurança
+
+- **Desempenho:** CDN (Vercel/Cloudflare), Lazy loading, compressão Brotli/Gzip
+- **SEO Técnico:** Next.js com renderização SSR/ISR, meta tags otimizadas
+- **Segurança:** HTTPS com SSL (Let's Encrypt), WAF e proteção DDoS via Cloudflare
+
+## 🤝 Como contribuir
+
+Este projeto é totalmente open source. Para contribuir:
+
+1. Faça um fork do projeto.
+2. Crie uma branch específica (`feature/sua-funcionalidade`):
    ```bash
-   git clone https://github.com/EtecGmail/afiliatech.git
-   cd afiliatech
+   git checkout -b feature/sua-funcionalidade
+   ```
+3. Realize commits com seu codinome (ex: `Yuzlkk`):
+   ```bash
+   git commit -m "Yuzlkk: Descrição da funcionalidade"
+   ```
+4. Faça push para sua branch:
+   ```bash
+   git push origin feature/sua-funcionalidade
+   ```
+4. Abra uma Pull Request no GitHub para revisão.
+
+## 📜 Licença
+
+Este projeto está sob a licença [MIT](LICENSE).
+
+
+## 🚀 Autor
+
+- **Yuzlkk (Yuri Garcia Pardinho)**
+- 📧 Contato: [yurietecg@gmail.com](mailto:yurietecg@gmail.com)
+
+
+**Disclaimer:** Este projeto foi desenvolvido exclusivamente para prática e aprendizado pessoal em análise e desenvolvimento de software, não possuindo finalidade comercial direta.
+```
